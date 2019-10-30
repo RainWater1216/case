@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .box {
+            width: 1000px;
+            height: 500px;
+            margin: 0 auto;
+        }
+
+        .yj {
+            font-size: 26px;
+            text-align: center;
+            color: red;
+        }
+
+        .xj {
+            font-size: 38px;
+            text-align: center;
+            color: red;
+        }
+        span{
+            color: red;
+            font-size: 26px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <img src="./images/hx.jpg">
+
+        <p>托森皮鞋打折啦 原价<span class="yj"><del>299</del></span>现价只需<span class="xj">$99</span>秒杀倒计时还剩<span id="d">0</span>天<span
+                id="h">0</span>时<span id="m">0</span>分<span id="s">0</span>秒</p>
+
+    </div>
+</body>
+<script>
+    var jtime = new Date('2019-11-10 23:59:59');
+    jztime = jtime.getTime(); // 获取截止到时间戳
+    var d = h = m = s = 0;
+    var dsq = setInterval(times, 1000)
+
+    function times() {
+        var xztime = new Date().getTime();
+        var sumtime = parseInt((jztime - xztime) / 1000) //获取秒数
+        if (sumtime > 0) {
+            d = parseInt(sumtime / 86400); // 获取剩余多少天
+            h = parseInt(sumtime / 3600) % 24; // 获取剩余多少时
+            m = parseInt(sumtime / 60) % 60; // 获取剩余多少分
+            s = parseInt(sumtime % 60); // 获取剩余多少秒
+        } else {
+            clearInterval(dsq);
+        }
+        document.getElementById("d").innerHTML = d;
+        document.getElementById("h").innerHTML = h;
+        document.getElementById("m").innerHTML = m;
+        document.getElementById("s").innerHTML = s;
+    }
+</script>
+
+</html>
