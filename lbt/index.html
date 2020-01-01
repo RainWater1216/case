@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="jquery-1.5.min.js"></script>
+    <style>
+        .ims {
+            width: 650px;
+            height: 430px;
+            margin: 0 auto;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .ims ul {
+            width: 200px;
+            height: 40px;
+            position: absolute;
+            right: 20px;
+            bottom: 1px;
+        }
+
+        .ims ul,
+        li {
+            list-style: none;
+        }
+
+        .ims ul li {
+            width: 40px;
+            height: 40px;
+            float: left;
+            border: 1px solid white;
+            text-align: center;
+            line-height: 40px;
+            color: white;
+            margin-left: 5px;
+        }
+
+        .ims ul li:hover {
+            background: yellowgreen;
+        }
+
+        .cureent {
+            background-color: aquamarine;
+            font-size: 16px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="ims">
+        <img src="./images/image1.jpg" id="imgs">
+        <ul>
+            <li class="lis">1</li>
+            <li class="lis">2</li>
+            <li class="lis">3</li>
+            <li class="lis">4</li>
+        </ul>
+    </div>
+</body>
+<script>
+    arr = ['image1.jpg', 'image2.jpg', 'image3.jpg', 'image4.jpg'];
+    qimg = document.getElementById("imgs");
+    lis = document.getElementsByClassName("lis");
+    i = 0;
+    timers = setInterval(imagl, 1000)
+
+    function imagl() {
+        qimg.src = "./images/" + arr[i];
+        // $("#imgs").attr({"src":"./images/" + arr[i]});
+        for (var j = 0; j < 4; j++) {
+            lis[j].classList.remove("cureent");
+        }
+        lis[i].classList.add("cureent");
+        i++
+        if (i > 3) {
+            i = 0;
+        }
+        for (var k = 0; k < 4; k++) {
+            lis[k].onmouseover = function () {
+                clearInterval(timers);
+                i = parseInt(this.innerHTML) - 1;
+                imagl();
+            };
+            lis[k].onmouseout = function () {
+                timers = setInterval(imagl, 1000)
+            }
+        }
+
+    }
+</script>
+
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title></title>
+        <style>
+            .father:hover {
+                transform: translateY(-5px);
+                transition: .5s all;
+                box-shadow: 0 15px 30px rgba(0, 0, 0, .1);
+            }
+
+            .father {
+                width: 150px;
+                height: 206px;
+                position: relative;
+                margin-left: 50px;
+                overflow: hidden;
+                display: inline-block;
+                transition: .5s all;
+            }
+
+            .imag {
+                width: 150px;
+                height: 206px;
+                background: black;
+                position: absolute;
+                top: 0;
+                transition: all .3s;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div>
+            <div id="002" class="father">
+                <img class="imag" src="img/002.png" />
+            </div>
+            <div id="003" class="father">
+                <img class="imag" />
+            </div>
+            <div id="004" class="father">
+                <img class="imag" />
+            </div>
+            <div id="005" class="father">
+                <img class="imag" />
+            </div>
+            <div id="006" class="father">
+                <img class="imag" />
+            </div>
+            <div id="007" class="father">
+                <img class="imag" />
+            </div>
+        </div>
+    </body>
+    <script type="text/javascript">
+        window.onload = function() {
+            var father = document.getElementsByClassName('father');
+            for(var i = 0; i < father.length; i++) {
+                var imag = father[i].getElementsByClassName('imag');
+                var son = father[i].getElementsByClassName('son');
+                var url = "img/" + father[i].id + ".png";
+                imag[0].src = url;
+            }
+        }
+    </script>
+
+</html>
