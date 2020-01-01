@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+
+<body>
+    <div class="box">
+        <div class="nav">
+            <div class="wz"><a href="">西藏旅游政务网</a></div>
+        </div>
+        <div class="nav1">
+            <ul>
+                <li><a href="#">网站主页</a></li>
+                <li><a href="#">旅游助手</a></li>
+                <li><a href="#">玩在西藏</a></li>
+                <li><a href="#">活动资讯</a></li>
+                <li><a href="#">探秘西藏</a></li>
+                <li><a href="#">关于我们</a></li>
+            </ul>
+        </div>
+        <div class="banner">
+            <div class="image1">
+                <div class="banners">
+                    <!-- 默认第一张 -->
+                    <img src="./images/image1.jpg" id="images" width="900" height="400">
+                </div>
+            </div>
+            <div class="image2">
+                <div class="image2_1">
+                    <div class="image2_3">
+                        <video width="320" height="200" controls>
+                            <source src="./video/QQ2.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="image2_4">
+                        <ul>
+                            <li><a href="#">旅游直达</a></li>
+                            <li><a href="#">藏人文化</a></li>
+                            <li><a href="#">旅游特权</a></li>
+                            <li><a href="#">藏人推荐</a></li>
+                            <li><a href="#">优惠促销</a></li>
+                            <li><a href="#">打折折扣</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="image3">
+                    <div class="image3_1"><video width="320" height="200" controls>
+                            <source src="./video/QQ1.mp4" type="video/mp4">
+                        </video></div>
+                    <div class="image3_2">
+                        <ul>
+                            <li><a href="#">旅游直达</a></li>
+                            <li><a href="#">藏人文化</a></li>
+                            <li><a href="#">旅游特权</a></li>
+                            <li><a href="#">藏人推荐</a></li>
+                            <li><a href="#">优惠促销</a></li>
+                            <li><a href="#">打折折扣</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="content">
+            <div class="content1">
+                <h2>罗布林卡</h2>
+                <p>罗布林卡属全国重点文物保护单位，位于西藏拉萨西郊。始建于十八世纪40年代（达赖七世），
+                    是历代达赖喇嘛消夏理政的地方，是一座典型的藏式风格园林。经过二百多年的扩建，全园占地36万平方米，园内有植物100余种，
+                    不仅有拉萨地区常见花木，而且有取自喜马拉雅山南北麓的奇花异草，还有从内地移植或从国外引进的名贵花卉，堪称高原植物园。
+                    建筑以格桑颇章、金色颇章、达登明久颇章为主体，有房374间，是西藏人造园林中规模最大、
+                    风景最佳的、古迹最多的园林。罗布林卡意为宝贝园林。</p>
+                <br>
+                <p>解放前，罗布林卡只是达赖和少数达官贵人游乐休息的“夏宫”，解放后，经过修缮，面貌一新，里面有苍松翠柏等树木49种，
+                    有牡丹、芍药等名花异草62种，飞禽走兽各类动物15种。园内有修葺工整的花池草坪，玲珑别致的凉亭水榭，还有戏台和木制的桌凳。 </p>
+                <button>下一页</button>
+            </div>
+            <div class="content2">
+                <h2>旅游推荐</h2>
+                <ol>
+                    <li><a href="#">西藏圣地,布达拉宫</a></li>
+                    <li><a href="#">湖水随光线变幻,羊卓雍措</a></li>
+                    <li><a href="#">藏式房屋建筑,八廓街</a></li>
+                    <li><a href="#">具有历史的古寺庙，色拉寺</a></li>
+                    <li><a href="#">勇者们的大本营，珠峰大本营</a></li>
+                    <li><a href="#">世界公认神山,冈仁波齐神山</a></li>
+                </ol>
+            </div>
+        </div>
+
+        <div class="hzh">
+            <div class="zh">
+                <ul>
+                    <li><a href="#">关于我们</a></li>
+                    <li><a href="#">合作加盟</a></li>
+                    <li><a href="#">联系我们</a></li>
+                    <li><a href="#">西藏之家</a></li>
+                    <li><a href="#">西藏保险</a></li>
+                    <li><a href="#">旅游攻略</a></li>
+                    <li><a href="#">旅游问答</a></li>
+                    <li><a href="#">旅游特价</a></li>
+                    <li><a href="#">旅游指南</a></li>
+                    <li><a href="#">旅游咨询</a></li>
+                </ul>
+                <p>西藏自治区 版权所有 2000-2020 服务热线：0871-0000000 请与我们联系：1481410541@qq.com</p>
+                <p class="copy">地址:西藏拉萨市罗布林卡3号 邮编：850001 请勿滥用</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+<script>
+var ss = ['image1', 'image2', 'image3', 'image4']; // 把图片放进一个数组
+var simages = document.getElementById('images'); // 获取图片
+var times = setInterval(imagess, 1500) // 计时器
+var i = 0; //  i初始值为0;
+function imagess() {
+    simages.src = "./images/" + ss[i] + ".jpg"; // 获取图片
+    i++; // 进行自增
+    if (i > 3) {
+        i = 0;
+    } // 当超过3时 从0开始
+
+}
+console.log(版权所有请勿滥用);
+</script>
+</html>

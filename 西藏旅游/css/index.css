@@ -1,0 +1,304 @@
+
+    * {
+    margin: 0px;
+    padding: 0px;
+}
+
+.box {
+    width: 1536px;
+    margin: 0 auto;
+}
+
+.nav {
+    position: relative;
+    width: 1536px;
+    height: 250px;
+    margin: 0 auto;
+    background: url('../images/logos.png') no-repeat 40px,
+    url('../images/xj.jpg') no-repeat;
+    overflow: hidden;
+}
+.nav .wz{
+    position:absolute;
+    width: 350px;
+    height: 50px;
+    left: 320px;
+    top: 100px;
+    font-size: 43px;
+}
+.wz a{
+    color: yellow;
+    text-decoration: none;
+}
+.nav1 {
+    width: 1536px;
+    height: 60px;
+    margin: 0 auto;
+    border-top: 1px solid gray;
+}
+
+.nav1 ul li {
+    float: left;
+    list-style: none;
+    line-height: 60px;
+    padding: 0px 40px 0px 0px;
+}
+
+.nav1 ul li a {
+    width: 80px;
+    height: 60px;
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
+    font-size: 20px;
+    color:papayawhip;
+    
+    padding: 0px 40px;
+
+}
+
+.nav1 ul li a:hover {
+    background-color:rgb(139, 33, 19);
+    color: white;
+}
+
+.banner {
+    width: 1536px;
+    height: 400px;
+    float: left;
+    border-top: 2px solid wheat;
+}
+
+.image1 {
+    width: 900px;
+    height: 400px;
+
+    float: left;
+}
+
+.image1 .banners {
+    width: 980px;
+    height: 403px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.image2 {
+    width: 632px;
+    height: 400px;
+    float: right;
+    /* background-color: steelblue; */
+}
+
+.image2_1 {
+    width: 632px;
+    height: 200px;
+    border-bottom: 1px solid wheat;
+}
+
+.image2_3 {
+    width: 250px;
+    height: 200px;
+    float: left;
+}
+
+.image2_4 {
+    width: 300px;
+    height: 200px;
+    float: right;
+}
+
+.image3 {
+    width: 632px;
+    height: 200px;
+
+}
+
+.image3_1 {
+    width: 250px;
+    height: 200px;
+
+    float: left;
+}
+
+.image3_2 {
+    width: 300px;
+    height: 200px;
+    float: right;
+}
+
+.image2_4 ul {
+    list-style: none;
+    margin: 40px 40px;
+}
+
+.image2_4 ul li {
+    list-style: none;
+    float: left;
+}
+
+.image2_4 ul li a {
+    font-size: 20px;
+    width: 50px;
+    height: 35px;
+    text-align: center;
+    padding: 15px 15px;
+    line-height: 35px;
+    text-decoration: none;
+    color:wheat;
+}
+
+.image2_4 ul li a:hover {
+    color: white;
+}
+
+.image3_2 ul {
+    list-style: none;
+    margin: 40px 40px;
+}
+
+.image3_2 ul li {
+    list-style: none;
+    float: left;
+}
+
+.image3_2 ul li a {
+    font-size: 20px;
+    width: 50px;
+    height: 35px;
+    text-align: center;
+    padding: 15px 15px;
+    line-height: 35px;
+    text-decoration: none;
+    color:wheat;
+}
+.image3_2 ul li a:hover{
+    color: white;
+}
+
+
+.content {
+    width: 1536px;
+    height: 350px;
+    float: left;
+    border-bottom: 2px solid wheat;
+    border-top: 2px solid wheat;
+    margin: 1px 0px;
+}
+
+.content1 {
+    width: 1100px;
+    height: 350px;
+    float: left;
+}
+
+.content1 h2 {
+    color:wheat;
+    padding: 20px 30px;
+    font-size: 35px;
+}
+
+.content1 p {
+    font-size: 20px;
+    line-height: 22px;
+    text-indent: 2em;
+    color: #F4F4F4;
+}
+
+.content1 button {
+    width: 100px;
+    height: 50px;
+    background-color: steelblue;
+    font-size: 23px;
+    text-align: center;
+    line-height: 50px;
+    color: white;
+    margin: 10px 0px;
+    border: 1px solid wheat;
+}
+
+.content2 {
+    width: 432px;
+    height: 350px;
+    float: right;
+}
+
+.content2 ol {
+
+    margin: 25px 60px 40px 60px;
+    color: wheat;
+}
+
+.content2 ol li a {
+    font-size: 20px;
+    width: 50px;
+    height: 40px;
+    text-align: center;
+    padding: 20px 20px;
+    line-height: 40px;
+    text-decoration: none;
+    color:wheat;
+}
+.content2 ol li a:hover{
+    color: white;
+}
+.content2 h2 {
+    padding: 30px 0px 0px 20px;
+    color: wheat;
+}
+
+.hzh {
+    width: 1536px;
+    height: 120px;
+    float: left;
+}
+
+.zh ul {
+    width: 800px;
+    height: 14px;
+    margin: 15px auto 13px;
+}
+
+.zh ul li {
+    height: 14px;
+    float: left;
+    padding: 0 10px;
+    list-style: none;
+   
+}
+.zh ul li a{
+    color: wheat;
+}
+.zh ul li a:hover{
+    color: white;
+}
+.zh {
+    height: 91px;
+    text-align: center;
+}
+.zh p{
+    color: wheat;
+}
+.zh p.copy {
+    height: 24px;
+    margin-top: 13px;
+    color: wheat;
+}
+
+.zh a {
+    font-size: 15px;
+}
+
+.zty {
+    float: right;
+}
+
+body {
+    background: url('../images/bj.jpg');
+}
+    
+    
+    
+    
+    
+    

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+ <link  rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div class="nav">
+        <div class="navs">
+            <ul>
+                <li id="sy"><a href="">我的首页</a>
+                    <div class="lis" id="lis">
+                        <a href="">菜单一</a>
+                        <a href="">菜单二</a>
+                        <a href="">菜单三</a>
+                        <a href="">菜单四</a>
+                    </div>
+                </li>
+                <li id="sp"><a href="">商品概况</a>
+                    <div class="lis" id="lis2">
+                        <a href="">三</a>
+                        <a href="">四</a>
+                        <a href="">一</a>
+                        <a href="">二</a>
+                    </div>
+                </li>
+                <li><a href="">关于我们</a></li>
+                <li><a href="">联系我们</a></li>
+                <li><a href="">客服电话</a></li>
+                <li><a href="">关于我们</a></li>
+                <li><a href="">联系我们</a></li>
+                <li><a href="">客服电话</a></li>
+                <li><a href="">联系我们</a></li>
+                <li><a href="">客服电话</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="w">
+        <div class="banner">
+            <div class="image1">
+                <!-- 默认第一张 -->
+                <img src="./images/image1.jpg" id="images" width="590" height="400" id="images">
+            </div>
+            <div class="image2">
+                <div class="image2_1">
+                    <div class="image2_3">
+                        <img src="./images/1.jpg" width="330" height="200">
+                    </div>
+                    <div class="image2_4">
+                        <ul>
+                            <li><a href="#">旅游直达</a></li>
+                            <li><a href="#">藏人文化</a></li>
+                            <li><a href="#">旅游特权</a></li>
+                            <li><a href="#">藏人推荐</a></li>
+                            <li><a href="#">优惠促销</a></li>
+                            <li><a href="#">打折折扣</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="image3">
+                    <div class="image3_1">
+                        <img src="./images/2.jpg" width="330" height="200">
+                    </div>
+                    <div class="image3_2">
+                        <ul>
+                            <li><a href="#">旅游直达</a></li>
+                            <li><a href="#">藏人文化</a></li>
+                            <li><a href="#">旅游特权</a></li>
+                            <li><a href="#">藏人推荐</a></li>
+                            <li><a href="#">优惠促销</a></li>
+                            <li><a href="#">打折折扣</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="content">
+            <div class="content-div" id="djs">
+                <div class="wz">
+                    <h3>倒计时</h3>
+                </div>
+                <div class="xmct-one" id="h">
+                    0
+                </div>
+                <div class="xmct-two" id="m">
+                    0
+                </div>
+                <div class="xmct-three" id="s">
+                    0
+                </div>
+            </div>
+            <div class="content-div" id="imq"><img src="./images/5.jpg" width="300" height="350"></div>
+            <div class="content-div" id="ims"><img src="./images/6.jpg" width="300" height="350"></div>
+            <div class="content-div" id="ime"><img src="./images/7.jpg" width="300" height="350"></div>
+        </div>
+    </div>
+
+    <div class="hzh">
+        <div class="zh">
+            <ul>
+                <li><a href="#">关于我们</a></li>
+                <li><a href="#">合作加盟</a></li>
+                <li><a href="#">联系我们</a></li>
+                <li><a href="#">郑州之家</a></li>
+                <li><a href="#">郑州保险</a></li>
+                <li><a href="#">旅游攻略</a></li>
+                <li><a href="#">旅游问答</a></li>
+                <li><a href="#">旅游特价</a></li>
+                <li><a href="#">旅游指南</a></li>
+                <li><a href="#">旅游咨询</a></li>
+            </ul>
+            <p>河南郑州 版权所有 2000-2020 服务热线：0871-0000000 请与我们联系：xizang@163.com</p>
+            <p class="copy">地址:河南省郑州市博学路 邮编：850001</p>
+        </div>
+    </div>
+</body>
+<script>
+    // 下拉菜单
+    var show = document.getElementById("sy");
+    var yc = document.getElementById("lis")
+    show.onmouseover = function () {
+        yc.style.display = "block";
+    }
+    show.onmouseout = function () {
+        yc.style.display = "none";
+    }
+    var shows = document.getElementById("sp");
+    var ycs = document.getElementById("lis2")
+    shows.onmouseover = function () {
+        ycs.style.display = "block";
+    }
+    shows.onmouseout = function () {
+        ycs.style.display = "none";
+    }
+    // 轮播
+    var ss = ['image1', 'image2', 'image3']; // 把图片放进一个数组
+    var simages = document.getElementById('images'); // 获取图片
+    var times = setInterval(imagess, 1500) // 计时器
+    var i = 0; //  i初始值为0;
+    function imagess() {
+        simages.src = "./images/" + ss[i] + ".jpg"; // 获取图片
+        i++; // 进行自增
+        if (i > 2) {
+            i = 0;
+        } // 当超过2时 从0开始
+    }
+    // 
+    tim = setInterval(djs, 1000);
+
+    function djs() {
+        var xztime = new Date().getTime();
+        var jztime = new Date('2020-12-25 23:59:00').getTime();
+        var h = m = s = 0;
+        var sjc = parseInt((jztime - xztime) / 1000);
+        if (sjc > 0) {
+            // d = parseInt(sjc / 86400);
+            h = parseInt(sjc / 3600 % 24);
+            m = parseInt(sjc / 60 % 60);
+            s = parseInt(sjc % 60);
+        } else {
+            clearInterval(tim);
+        }
+        document.getElementById("h").innerHTML = h;
+        document.getElementById("m").innerHTML = m;
+        document.getElementById("s").innerHTML = s;
+    }
+</script>
+
+</html>
